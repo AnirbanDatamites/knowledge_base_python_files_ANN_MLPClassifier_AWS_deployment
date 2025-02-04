@@ -1,3 +1,5 @@
+#Disclaimer: This file only to be used for referencing purposes
+
 from flask import Flask, request, jsonify, render_template
 import pickle
 import numpy as np
@@ -37,3 +39,5 @@ def predict():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080, debug=True)
+
+#Note: Please ensure the correct file path in your local machine and also as required change the port at your end. 
