@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stroke Prediction</title>
+</head>
+<body>
+    <h2>Stroke Prediction Model</h2>
+    <form action="/predict" method="post">
+        <label for="Female">Female (0 or 1):</label>
+        <input type="number" name="Female" required><br>
+
+        <label for="Male">Male (0 or 1):</label>
+        <input type="number" name="Male" required><br>
+
+        <label for="Govt_job">Govt_job (0 or 1):</label>
+        <input type="number" name="Govt_job" required><br>
+
+        <label for="Never_worked">Never_worked (0 or 1):</label>
+        <input type="number" name="Never_worked" required><br>
+
+        <label for="Private">Private (0 or 1):</label>
+        <input type="number" name="Private" required><br>
+
+        <label for="Self-employed">Self-employed (0 or 1):</label>
+        <input type="number" name="Self-employed" required><br>
+
+        <label for="children">Children (0 or 1):</label>
+        <input type="number" name="children" required><br>
+
+        <label for="Unknown">Unknown (0 or 1):</label>
+        <input type="number" name="Unknown" required><br>
+
+        <label for="formerly_smoked">Formerly Smoked (0 or 1):</label>
+        <input type="number" name="formerly_smoked" required><br>
+
+        <label for="never_smoked">Never Smoked (0 or 1):</label>
+        <input type="number" name="never_smoked" required><br>
+
+        <label for="smokes">Smokes (0 or 1):</label>
+        <input type="number" name="smokes" required><br>
+
+        <label for="Rural">Rural (0 or 1):</label>
+        <input type="number" name="Rural" required><br>
+
+        <label for="Urban">Urban (0 or 1):</label>
+        <input type="number" name="Urban" required><br>
+
+        <label for="age">Age:</label>
+        <input type="number" step="any" name="age" required><br>
+
+        <label for="hypertension">Hypertension (0 or 1):</label>
+        <input type="number" name="hypertension" required><br>
+
+        <label for="heart_disease">Heart Disease (0 or 1):</label>
+        <input type="number" name="heart_disease" required><br>
+
+        <label for="ever_married">Ever Married (0 or 1):</label>
+        <input type="number" name="ever_married" required><br>
+
+        <label for="avg_glucose_level">Avg Glucose Level:</label>
+        <input type="number" step="any" name="avg_glucose_level" required><br>
+
+        <label for="bmi">BMI:</label>
+        <input type="number" step="any" name="bmi" required><br>
+
+        <button type="submit">Predict</button>
+    </form>
+
+    <h3>{{ prediction_text }}</h3>
+</body>
+</html>
